@@ -6,6 +6,14 @@ module.exports = {
       fontFamily: {
         'asap': ['"Asap"', 'sans-serif'],
       },
+      colors: {
+        azuluniyop: '#0284C7', 
+        azulclaro: '#4e82c2',
+        azultext: '#204088',
+        moradofondo: '#aba0ea',
+        azulreview: '#3084e2',
+
+      },
     },
   },
   plugins: [],
