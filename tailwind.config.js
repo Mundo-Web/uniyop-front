@@ -12,6 +12,9 @@ module.exports = {
         azultext: '#204088',
         moradofondo: '#aba0ea',
         azulreview: '#3084e2',
+        textoblog: '#64748B',
+        fondoplomo: '#F3F4F6',
+        textogris:  '#566A7F',
 
       },
     },
