@@ -15,7 +15,15 @@ module.exports = {
         textoblog: '#64748B',
         fondoplomo: '#F3F4F6',
         textogris:  '#566A7F',
-
+        
+      },
+      screens: {
+        'xs': '120px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
       },
     },
   },
