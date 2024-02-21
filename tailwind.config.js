@@ -15,6 +15,14 @@ module.exports = {
         textoblog: '#64748B',
         fondoplomo: '#F3F4F6',
         textogris:  '#566A7F',
+        rosauniyop: '#F094BC',
+        rosauniyopcard: '#ebc7d6',
+        naranjayop: '#EF8C45',
+        naranjayopcard: '#edaf82',
+        verdeyop: '#33B438',
+        verdeyopcard: '#98E69B',
+        amarilloyop: '#F6D84D',
+        amarilloyopcard: '#f7e697',
         
       },
       screens: {

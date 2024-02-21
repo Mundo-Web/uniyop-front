@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+
+      .menu-icon {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        margin-left:2px;
+    }
+
+    .bar {
+      width: 30px;
+      height: 3px;
+      background-color: black;
+      margin: 4px 0px;
+      transition: 0.4s;
+      }
+
+    .menu-icon.change .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 10px);
+      margin-left:-2px;
+     }
+    
+    .menu-icon.change .bar:nth-child(2) {
+        opacity: 0;
+      }
+    
+    .menu-icon.change .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -10px);
+        margin-left:-2px;
+     }
+}

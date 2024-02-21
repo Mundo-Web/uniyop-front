@@ -9,22 +9,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="./output.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    7
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
 
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="font-asap">
-  <div class="h-28 flex justify-center items-center xs:w-full">
+  <div class="h-28 flex lg:justify-center items-center xs:w-full xs:justify-between xs:px-[5%]">  
     <img src="images/logo_cabecera.png" alt="">
+    
+    <div class="group z-50 xs:block lg:hidden " id="botonmenu" >
+      <a type="button"  href="javascript:void(0)"   class=" float-right text-lg bg-fondoboton text-white w-16 h-16 rounded-full  inline-flex items-center justify-center" >
+         
+          <div class="menu-icon w-8 h-8" id="menuIcon">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+      </a>  
+      </div>   
+    
   </div>
   
-  <nav class="drop-shadow-lg ">
+  <div id="menu" class="fixed z-50 w-0 h-0 flex justify-center items-center bg-white opacity-0 duration-700">
+     
+    <div class="flex flex-col text-azultext text-left text-4xl font-bold space-y-4 font-RightgroteskMedium tracking-wide">
+        <a class="hover:underline duration-300 tracking-tight		" href="">Home</a>
+        <a class="hover:underline duration-300 tracking-tight" href="">Sé parte de nosotros</a>
+        <a class="hover:underline duration-300 tracking-tight" href="">Blog y Eventos</a>
+        <a class="hover:underline duration-300 tracking-tight" href="">Quiero apoyar</a>
+    </div>
+  </div>
+
+  <nav class="drop-shadow-lg xs:hidden lg:block" >
     <div class="h-20 bg-[#3D8BF2] flex justify-center space-x-6 items-center text-white text-2xl">
         <a href="">Home</a>
         <a href="">Se parte de nosotros</a>
@@ -33,13 +52,15 @@
     </div>
   </nav>
 
+
+
   <section class="bg-[#4E82C2] px-[5%]">
-    <div class="grid grid-cols-12 xs:py-20 lg:py-20">
+    <div class=" grid grid-cols-12 xs:py-20 lg:py-20">
         
         <div class="flex items-center xs:col-span-12 lg:col-span-5 ">
             
             <div class="">
-                <h1 class="xs:text-3xl   lg:text-6xl pb-8 text-white font-bold">
+                <h1 class="xs:text-4xl   lg:text-6xl pb-8 text-white font-bold">
                     Capacitaciones y Charlas para la Prevención de la Violencia Doméstica
                 </h1>
                 <p class="pb-8 text-white text-2xl">
@@ -69,7 +90,7 @@
         <div class="flex justify-center items-center col-span-12  ">
             
             <div class="xs:text-left lg:text-center">
-                <h1 class="text-6xl pb-8 text-azultext font-bold">
+                <h1 class="xs:text-4xl   lg:text-6xl pb-8 text-azultext font-bold">
                   Por un Futuro Sin Violencia:
                 </h1>
                 <p class="pb-8 text-#283847 text-xl">
@@ -83,7 +104,7 @@
             
           <div class="grid grid-cols-12 gap-3">
              
-                <div class="xs:col-span-12 lg:col-span-3 xs:p-0 lg:p-6">
+                <div class="xs:col-span-12 lg:col-span-3 xs:p-0 lg:p-6 group hover:bg-rosauniyopcard rounded-lg " data-aos="fade-right" data-aos-duration="1000">
                     <div class="grid grid-cols-4 pb-5">
                         <div class="col-span-1">
                           <img src="images/pinkuser.svg"/>
@@ -93,10 +114,10 @@
 
                     <div class="grid grid-cols-4">
                       <div class="col-span-4">
-                        <h2 class="text-2xl  text-azultext font-bold pb-3">
+                        <h2 class="text-2xl  text-azultext  font-bold pb-3 group-hover:text-white transition-all  duration-100">
                           Violencia Fisica
                         </h2>
-                        <p class="text-textogris xs:text-lg lg:text-base xs:pb-5 lg:h-56">
+                        <p class="text-textogris xs:text-lg lg:text-base xs:pb-5 lg:h-56 group-hover:text-white transition-all  duration-100">
                           Según la Organización Mundial de la Salud (OMS), aproximadamente 1 de cada 3 mujeres en todo el mundo ha experimentado violencia física o sexual por parte de una pareja íntima en su vida.
                         </p>
                       </div>
@@ -106,12 +127,16 @@
                     <div class="grid grid-cols-4">
                       <div class="col-span-3 "></div>
                       <div class="col-span-1">
-                          <div class="float-right bg-azuluniyop w-16 h-12 flex items-center justify-center rounded-lg"><img class="w-6" src="images/arrorwhite.svg"/></div>
+                          <div class="float-right bg-azuluniyop w-16 h-12 flex items-center justify-center rounded-lg group-hover:bg-rosauniyop transition-all  duration-100"><img class="w-6" src="images/arrorwhite.svg"/></div>
                       </div>
                     </div>
                 </div>
+                
 
-                <div class="xs:col-span-12 lg:col-span-3 xs:p-0 lg:p-6">
+
+
+
+                <div class="xs:col-span-12 lg:col-span-3 xs:p-0 lg:p-6 group hover:bg-naranjayopcard rounded-lg" data-aos="fade-down" data-aos-duration="3000">
                   <div class="grid grid-cols-4 pb-5">
                       <div class="col-span-1">
                         <img src="images/orangeuser.svg"/>
@@ -121,10 +146,10 @@
 
                   <div class="grid grid-cols-4">
                     <div class="col-span-4">
-                      <h2 class="text-2xl  text-#204088 font-bold pb-3">
+                      <h2 class="text-2xl  text-#204088 font-bold pb-3 group-hover:text-white transition-all  duration-100">
                         Violencia Economica
                       </h2>
-                      <p class="text-textogris xs:text-lg lg:text-base xs:pb-5 lg:h-56">
+                      <p class="text-textogris xs:text-lg lg:text-base xs:pb-5 lg:h-56 group-hover:text-white transition-all  duration-100">
                         La violencia económica es una forma de control que puede mantener a las víctimas atrapadas en relaciones abusivas. Según [Fuente], el [Porcentaje]% de las personas que experimentan violencia doméstica también sufren algún tipo de abuso económico.
                       </p>
                     </div>
@@ -134,12 +159,16 @@
                   <div class="grid grid-cols-4">
                     <div class="col-span-3 "></div>
                     <div class="col-span-1">
-                        <div class="float-right bg-azuluniyop w-16 h-12 flex items-center justify-center rounded-lg"><img class="w-6" src="images/arrorwhite.svg"/></div>
+                        <div class="float-right bg-azuluniyop w-16 h-12 flex group-hover:bg-naranjayop items-center justify-center rounded-lg"><img class="w-6" src="images/arrorwhite.svg"/></div>
                     </div>
                   </div>
               </div>
 
-              <div class="xs:col-span-12 lg:col-span-3 xs:p-0 lg:p-6">
+
+
+
+
+              <div class="xs:col-span-12 lg:col-span-3 xs:p-0 lg:p-6 group hover:bg-verdeyopcard rounded-lg" data-aos="fade-up" data-aos-duration="3000">
                 <div class="grid grid-cols-4 pb-5">
                     <div class="col-span-1">
                       <img src="images/greenuser.svg"/>
@@ -149,10 +178,10 @@
 
                 <div class="grid grid-cols-4">
                   <div class="col-span-4">
-                    <h2 class="text-2xl  text-#204088 font-bold pb-3">
+                    <h2 class="text-2xl  text-#204088 font-bold pb-3 group-hover:text-white transition-all  duration-100">
                       Violencia Psicológica
                     </h2>
-                    <p class=" text-textogris xs:text-lg lg:text-base xs:pb-5 lg:h-56">
+                    <p class=" text-textogris xs:text-lg lg:text-base xs:pb-5 lg:h-56 group-hover:text-white transition-all  duration-100">
                       La violencia psicológica puede ser tan perjudicial como la violencia física. En promedio, el [Porcentaje]% de las víctimas de violencia doméstica también experimentan formas de abuso psicológico.
                     </p>
                   </div>
@@ -162,12 +191,17 @@
                 <div class="grid grid-cols-4">
                   <div class="col-span-3 "></div>
                   <div class="col-span-1">
-                      <div class="float-right bg-azuluniyop w-16 h-12 flex items-center justify-center rounded-lg"><img class="w-6" src="images/arrorwhite.svg"/></div>
+                      <div class="float-right bg-azuluniyop w-16 h-12 flex group-hover:bg-verdeyop   items-center justify-center rounded-lg"><img class="w-6" src="images/arrorwhite.svg"/></div>
                   </div>
                 </div>
             </div>
 
-            <div class="xs:col-span-12 lg:col-span-3 xs:p-0 lg:p-6">
+
+
+
+
+
+            <div class="xs:col-span-12 lg:col-span-3 xs:p-0 lg:p-6 group hover:bg-amarilloyopcard rounded-lg" data-aos="fade-left" >
               <div class="grid grid-cols-4 pb-5">
                   <div class="col-span-1">
                     <img src="images/yellowuser.svg"/>
@@ -177,10 +211,10 @@
 
               <div class="grid grid-cols-4">
                 <div class="col-span-4">
-                  <h2 class="text-2xl  text-#204088 font-bold pb-3">
+                  <h2 class="text-2xl  text-#204088 font-bold pb-3 group-hover:text-white transition-all  duration-100">
                     Violencia Sexual
                   </h2>
-                  <p class=" text-textogris xs:text-lg lg:text-base xs:pb-5 lg:h-56">
+                  <p class=" text-textogris xs:text-lg lg:text-base xs:pb-5 lg:h-56 group-hover:text-white transition-all  duration-100">
                     En UniYop, nos dedicamos a erradicar la violencia doméstica. A través de apoyo, recursos y educación, trabajamos para crear comunidades seguras y libres de abuso. Únete a nosotros en la construcción de un futuro más seguro para todos.
                   </p>
                 </div>
@@ -190,7 +224,7 @@
               <div class="grid grid-cols-4">
                 <div class="col-span-3 "></div>
                 <div class="col-span-1 ">
-                    <div class="float-right bg-azuluniyop w-16 h-12 flex items-center justify-center rounded-lg"><img class="w-6" src="images/arrorwhite.svg"/></div>
+                    <div class="float-right bg-azuluniyop w-16 h-12 flex group-hover:bg-amarilloyop  items-center justify-center rounded-lg"><img class="w-6" src="images/arrorwhite.svg"/></div>
                 </div>
               </div>
           </div>
@@ -221,7 +255,7 @@
                 <div
                     class="transition-all duration-200   border-b-2 cursor-pointer ">
                     <button type="button" id="question1" data-state="closed" class="flex items-center justify-between w-full px-0 py-5 ">
-                        <span class="flex text-4xl pb-2 text-white font-bold text-left">¿Quienes somos?</span>
+                        <span class="flex xs:text-3xl   lg:text-4xl pb-2 text-white font-bold text-left">¿Quienes somos?</span>
                         <svg id="arrow1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                             class="w-6 h-6 text-gray-400">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -238,7 +272,7 @@
                 <div
                     class="transition-all duration-200   border-b-2 cursor-pointer">
                     <button type="button" id="question2" data-state="closed" class="flex items-center justify-between w-full px-0 py-5">
-                        <span class="flex text-4xl pb-2 text-white font-bold text-left">¿Qué hacemos?</span>
+                        <span class="flex xs:text-3xl   lg:text-4xl pb-2 text-white font-bold text-left">¿Qué hacemos?</span>
                         <svg id="arrow2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                             class="w-6 h-6 text-gray-400">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -255,7 +289,7 @@
                 <div
                     class="transition-all duration-200   border-b-2 cursor-pointer">
                     <button type="button" id="question3" data-state="closed" class="flex items-center justify-between w-full px-0 py-5">
-                        <span class="flex text-4xl pb-2 text-white font-bold text-left">¿Por qué lo hacemos?</span>
+                        <span class="flex xs:text-3xl   lg:text-4xl pb-2 text-white font-bold text-left">¿Por qué lo hacemos?</span>
                         <svg id="arrow3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                             class="w-6 h-6 text-gray-400">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -282,7 +316,7 @@
         <div class="flex justify-center items-center col-span-12  ">
             
             <div class="text-center">
-                <h1 class="text-6xl pb-8 text-azultext font-bold">
+                <h1 class="xs:text-6xl   lg:text-6xl pb-8 text-azultext font-bold">
                   Nuestro equipo
                 </h1>
             </div>
@@ -320,7 +354,7 @@
         
         <div class="xs:col-span-12 lg:col-span-5">
        
-          <h2 class="xs:text-3xl lg:text-6xl pb-3 text-white font-bold text-left">
+          <h2 class="xs:text-4xl lg:text-6xl pb-3 text-white font-bold text-left">
             Juntos podemos hacer la diferencia: Dona para combatir la violencia doméstica
           </h2>
           <p class=" sm:pb-6 text-xl text-white">
@@ -360,7 +394,7 @@
         
         <div class="flex justify-center items-center col-span-12  ">
             
-          <div class="grid grid-cols-2 gap-10 xs:px-[10%] lg:px-[20%] multiple-items">
+          <div class="grid grid-cols-2 gap-10 xs:px-[10%] lg:px-[20%] slickclase">
              
             <div class="bg-white p-6 text-center rounded-2xl">
 
@@ -589,7 +623,7 @@
                 <p class="text-white text-base ">Construido con nosotros un mundo mejor.</p>
           </div>
 
-          <div class="xs:col-span-12 lg:col-span-4>
+          <div class="xs:col-span-12 lg:col-span-4">
                 <ul class="flex flex-row justify-between text-white">
                     <li>
                       Home
@@ -616,7 +650,12 @@
 
   </footer>
 
-
+<!-- 
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
   
 	<script>
 
@@ -641,13 +680,47 @@
         });
     });
 
-    $('.multiple-items').slick({
+    $('.slickclase').slick({
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 1
       });
 
 </script>
+<script>
 
+
+  document.getElementById("menuIcon").addEventListener("click", function() {
+      var menuIcon = document.getElementById("menuIcon");
+      menuIcon.classList.toggle("change");
+  });
+  
+  
+  document.addEventListener("DOMContentLoaded", function() {
+          var menu = document.getElementById("menu");
+          var miBoton = document.getElementById("botonmenu");
+          var estado = false;
+          
+          miBoton.addEventListener("click", function() {
+             
+          if (estado) {
+              menu.classList.remove("w-screen", "h-screen", "opacity-100");
+              menu.classList.add("w-0", "h-0", "opacity-0");
+             
+          } else {
+              menu.classList.remove("w-0", "h-0", "opacity-0");
+              menu.classList.add("w-screen", "h-screen", "opacity-100", "-mt-0");
+          }
+  
+          
+          estado = !estado;
+    });
+  
+  }); 
+
+</script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
