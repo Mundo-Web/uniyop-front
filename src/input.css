@@ -32,4 +32,43 @@
         transform: rotate(45deg) translate(-5px, -10px);
         margin-left:-2px;
      }
+
+    .slide-container{
+      padding-bottom: 100px;
+
+    }   
+/* 
+    .slide-content{
+      padding: 100px;
+      margin: 0
+    } */
+     /* .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      width: 50%;
+      height: auto;
+      margin: 20px auto;
+    } */
+
+    
+
 }

@@ -10,9 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="./output.css" rel="stylesheet">
 
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
-    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
-
+    <!-- <link rel="stylesheet" type="text/css" href="../public/css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="../public/css/slick.css"/> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -243,7 +245,7 @@
         
         <div class="xs:col-span-12 lg:col-span-7 flex justify-start items-center ">
             <div>
-              <img src="images/mujeruniyop.png" />
+              <img src="images/mujeruniyop.png"/>
             </div>
         </div>
         
@@ -327,19 +329,100 @@
           <div class="grid grid-cols-12 gap-3">
              
             <div class="xs:col-span-12 md:col-span-6 lg:col-span-3 p-6">
-                <img src="images/varon_1.png">
+                
+              <div class="flex  items-center justify-center ">
+                <div class="group h-96 w-80 [perspective:1000px]">
+                  <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                    <div class="absolute inset-0">
+                      <img class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src="images/varon_1.png" alt="" />
+                    </div>
+                    <div class="absolute inset-0 h-full w-full rounded-xl bg-black/70 px-8 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                      <div class="flex min-h-full flex-col items-start justify-end pb-8">
+                        <h1 class="text-xl font-bold">Jane Doe</h1>
+                        <p class="text-base text-left">Suspendisse mauris arcu, ultricies non iaculis iaculis, faucibus id libero. </p>
+                         <div class="flex flex-row space-x-3 pt-3">
+                              <a><img src="images/insta.svg"/></a>
+                              <a><img src="images/linkedin.svg"/></a>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
 
             <div class="xs:col-span-12 md:col-span-6 lg:col-span-3 p-6">
-                <img src="images/varon_2.png">
+                
+              <div class="flex  items-center justify-center ">
+                <div class="group h-96 w-80 [perspective:1000px]">
+                  <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                    <div class="absolute inset-0">
+                      <img class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src="images/varon_2.png" alt="" />
+                    </div>
+                    <div class="absolute inset-0 h-full w-full rounded-xl bg-black/70 px-8 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                      <div class="flex min-h-full flex-col items-start justify-end pb-8">
+                        <h1 class="text-xl font-bold">Jane Doe</h1>
+                        <p class="text-base text-left">Suspendisse mauris arcu, ultricies non iaculis iaculis, faucibus id libero. </p>
+                         <div class="flex flex-row space-x-3 pt-3">
+                              <a><img src="images/insta.svg"/></a>
+                              <a><img src="images/linkedin.svg"/></a>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
             </div>
 
             <div class="xs:col-span-12 md:col-span-6 lg:col-span-3 p-6">
-                <img src="images/varon_3.png">
+              
+              <div class="flex  items-center justify-center ">
+                <div class="group h-96 w-80 [perspective:1000px]">
+                  <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                    <div class="absolute inset-0">
+                      <img class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src="images/varon_3.png" alt="" />
+                    </div>
+                    <div class="absolute inset-0 h-full w-full rounded-xl bg-black/70 px-8 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                      <div class="flex min-h-full flex-col items-start justify-end pb-8">
+                        <h1 class="text-xl font-bold">Jane Doe</h1>
+                        <p class="text-base text-left">Suspendisse mauris arcu, ultricies non iaculis iaculis, faucibus id libero. </p>
+                         <div class="flex flex-row space-x-3 pt-3">
+                              <a><img src="images/insta.svg"/></a>
+                              <a><img src="images/linkedin.svg"/></a>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
 
             <div class="xs:col-span-12 md:col-span-6 lg:col-span-3 p-6">
-                <img src="images/varon_2.png">
+               
+              <div class="flex  items-center justify-center ">
+                <div class="group h-96 w-80 [perspective:1000px]">
+                  <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                    <div class="absolute inset-0">
+                      <img class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src="images/varon_2.png" alt="" />
+                    </div>
+                    <div class="absolute inset-0 h-full w-full rounded-xl bg-black/70 px-8 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                      <div class="flex min-h-full flex-col items-start justify-end pb-8">
+                        <h1 class="text-xl font-bold">Jane Doe</h1>
+                        <p class="text-base text-left">Suspendisse mauris arcu, ultricies non iaculis iaculis, faucibus id libero. </p>
+                         <div class="flex flex-row space-x-3 pt-3">
+                              <a><img src="images/insta.svg"/></a>
+                              <a><img src="images/linkedin.svg"/></a>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
         </div>
 
@@ -380,8 +463,8 @@
   </section>
 
 
-  <section class="px-[5%] bg-azulreview">
-    <div class="grid grid-cols-12 py-20">
+  <section class="px-[5%] bg-azulreview py-20">
+    <div class="grid grid-cols-12  pb-8">
         
         <div class="flex justify-center items-center col-span-12  ">
             
@@ -391,12 +474,14 @@
                 </h2>
             </div>
         </div>
-        
-        <div class="flex justify-center items-center col-span-12  ">
-            
-          <div class="grid grid-cols-2 gap-10 xs:px-[10%] lg:px-[20%] slickclase">
-             
-            <div class="bg-white p-6 text-center rounded-2xl">
+    </div>
+
+    <!-- justify-center items-center col-span-12 bg-blue-600 py-10 -->
+    <div class="swiper slide-container bg-azulreview ">
+         <div class="mx-20  slide-content overflow-hidden "> 
+          <div class="card-wrapper swiper-wrapper pb-10" >
+            <!-- xs:px-[10%] lg:px-[20%] grid grid-cols-2 gap-10-->
+            <div class="swiper-slide  bg-white p-6 text-center rounded-2xl w-96 ">
 
                   <p class="text-xl mb-3">Apoyar a UniYop es un privilegio. Saber que mi donación está ayudando a 
                     combatir la violencia doméstica me llena de esperanza. Cada aporte cuenta 
@@ -408,22 +493,49 @@
             </div>
 
 
-            <div class="bg-white p-6 text-center rounded-2xl">
+            <div class="swiper-slide  bg-white p-6 text-center rounded-2xl w-96">
 
-              <p class="text-xl mb-3">Apoyar a UniYop es un privilegio. Saber que mi donación está ayudando a 
-                combatir la violencia doméstica me llena de esperanza. Cada aporte cuenta 
-                y estoy orgulloso de ser parte de este importante cambio.</p>
+                    <p class="text-xl mb-3">Apoyar a UniYop es un privilegio. Saber que mi donación está ayudando a 
+                      combatir la violencia doméstica me llena de esperanza. Cada aporte cuenta 
+                      y estoy orgulloso de ser parte de este importante cambio.</p>
 
-              <h2 class="text-xl font-bold  mb-2">Ademir Neyra</h2>
+                    <h2 class="text-xl font-bold  mb-2">Ademir Neyra</h2>
 
-              <span class="text-base  mb-2">Voluntario</span>
+                    <span class="text-base  mb-2">Voluntario</span>
             </div>
 
-           </div>
+
+            <div class="swiper-slide  bg-white p-6 text-center rounded-2xl w-96">
+
+                    <p class="text-xl mb-3">Apoyar a UniYop es un privilegio. Saber que mi donación está ayudando a 
+                      combatir la violencia doméstica me llena de esperanza. Cada aporte cuenta 
+                      y estoy orgulloso de ser parte de este importante cambio.</p>
+
+                    <h2 class="text-xl font-bold  mb-2">Ademir Neyra</h2>
+
+                    <span class="text-base  mb-2">Voluntario</span>
+            </div>
+
+            <div class="swiper-slide  bg-white p-6 text-center rounded-2xl  ">
+
+                    <p class="text-xl mb-3">Apoyar a UniYop es un privilegio. Saber que mi donación está ayudando a 
+                      combatir la violencia doméstica me llena de esperanza. Cada aporte cuenta 
+                      y estoy orgulloso de ser parte de este importante cambio.</p>
+
+                    <h2 class="text-xl font-bold  mb-2">Ademir Neyra</h2>
+
+                    <span class="text-base  mb-2">Voluntario</span>
+            </div>
+
+          </div>
+
+           <div class="swiper-button-next"></div>
+           <div class="swiper-button-prev"></div>
+           <div class="swiper-pagination"></div>
 
         </div>
-
-    </div>
+    </div>  
+    
   </section>
 
   
@@ -450,9 +562,9 @@
                       <img class="w-full h-full" src="images/eventos.png"/> 
                     </div>
                     <div class="xs:col-span-12 md:col-span-6 flex flex-col items-end justify-center bg-fondoplomo p-8 xs:rounded-2xl md:rounded-none">
-                      <h2 class="text-xl font-bold  mb-2 text-textoblog">Los derechos humanos de las mujeres y la igualdad de género</h2>
+                      <h2 class="xs:text-xl lg:text-2xl font-bold  mb-2 text-textoblog">Los derechos humanos de las mujeres y la igualdad de género</h2>
     
-                      <p class="text-sm  mb-3">Garantizar de manera efectiva que las mujeres, las niñas, los hombres, 
+                      <p class="xs:text-sm lg:text-base  mb-3">Garantizar de manera efectiva que las mujeres, las niñas, los hombres, 
                         los niños y las personas con diversidad de género puedan...</p>
                       
                         <div class=" bg-azuluniyop w-16 h-12 flex items-center justify-center rounded-lg"><img class="w-6" src="images/arrorwhite.svg"/></div>
@@ -471,9 +583,9 @@
                   <img class="w-full h-full" src="images/eventos.png"/> 
                 </div>
                 <div class="xs:col-span-12 md:col-span-6 flex flex-col items-end justify-center bg-fondoplomo p-8 xs:rounded-2xl md:rounded-none">
-                  <h2 class="text-xl font-bold  mb-2 text-textoblog">Los derechos humanos de las mujeres y la igualdad de género</h2>
+                  <h2 class="xs:text-xl lg:text-2xl font-bold  mb-2 text-textoblog">Los derechos humanos de las mujeres y la igualdad de género</h2>
 
-                  <p class="text-sm  mb-3">Garantizar de manera efectiva que las mujeres, las niñas, los hombres, 
+                  <p class="xs:text-sm lg:text-base  mb-3">Garantizar de manera efectiva que las mujeres, las niñas, los hombres, 
                     los niños y las personas con diversidad de género puedan...</p>
                   
                     <div class=" bg-azuluniyop w-16 h-12 flex items-center justify-center rounded-lg"><img class="w-6" src="images/arrorwhite.svg"/></div>
@@ -492,9 +604,9 @@
                     <img class="w-full h-full" src="images/eventos.png"/> 
                   </div>
                   <div class="xs:col-span-12 md:col-span-6 flex flex-col items-end justify-center bg-fondoplomo p-8 xs:rounded-2xl md:rounded-none">
-                    <h2 class="text-xl font-bold  mb-2 text-textoblog">Los derechos humanos de las mujeres y la igualdad de género</h2>
+                    <h2 class="xs:text-xl lg:text-2xl font-bold  mb-2 text-textoblog">Los derechos humanos de las mujeres y la igualdad de género</h2>
   
-                    <p class="text-sm  mb-3">Garantizar de manera efectiva que las mujeres, las niñas, los hombres, 
+                    <p class="xs:text-sm lg:text-base  mb-3">Garantizar de manera efectiva que las mujeres, las niñas, los hombres, 
                       los niños y las personas con diversidad de género puedan...</p>
                     
                       <div class=" bg-azuluniyop w-16 h-12 flex items-center justify-center rounded-lg"><img class="w-6" src="images/arrorwhite.svg"/></div>
@@ -514,9 +626,9 @@
                   <img class="w-full h-full xs:rounded-2xl md:rounded-none" src="images/eventos.png"/> 
                 </div>
                 <div class="xs:col-span-12 md:col-span-6 flex flex-col items-end justify-center bg-fondoplomo p-8 xs:rounded-2xl md:rounded-none">
-                  <h2 class="text-xl font-bold  mb-2 text-textoblog">Los derechos humanos de las mujeres y la igualdad de género</h2>
+                  <h2 class="xs:text-xl lg:text-2xl font-bold  mb-2 text-textoblog">Los derechos humanos de las mujeres y la igualdad de género</h2>
 
-                  <p class="text-sm  mb-3">Garantizar de manera efectiva que las mujeres, las niñas, los hombres, 
+                  <p class="xs:text-sm lg:text-base  mb-3">Garantizar de manera efectiva que las mujeres, las niñas, los hombres, 
                     los niños y las personas con diversidad de género puedan...</p>
                   
                     <div class=" bg-azuluniyop w-16 h-12 flex items-center justify-center rounded-lg"><img class="w-6" src="images/arrorwhite.svg"/></div>
@@ -650,13 +762,84 @@
 
   </footer>
 
-<!-- 
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+  <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script> -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+  <!-- <script type="text/javascript" src="../public/js/slick.js"></script> -->
   
-  
+  <script>
+        // var image = document.getElementsByClassName('imagenentradaladerecha');
+        // new simpleParallax(image, {
+        //   orientation: 'right',
+        //   scale: 1.5,
+        //   overflow: true
+        // });
+        $(document).ready(function(){
+          var parallax = new simpleParallax(document.querySelector('.imagenentradaladerecha'), {
+          orientation: 'right', 
+        });
+      
+    });
+  </script>
+
+  <script>
+    var swiper = new Swiper(".slide-content", {
+      slidesPerView: 2,
+      spaceBetween: 25,
+      centeredSlides: false,
+      loop: true,
+      fade: 'true',
+      grabCursor: 'true',
+      pagination:{
+        el: ".swiper-pagination",
+        clickable: "true",
+        dinamycBullets: true,
+
+      },
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        240: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        660: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+
+  <script>
+        $(document).ready(function(){
+          $('.slickclase').slick({
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1
+          });
+        });
+
+        $('.main-carousel').flickity({
+          // options
+          cellAlign: 'left',
+          contain: true
+        });
+
+        
+  </script>
+
 	<script>
 
         var scene = document.getElementById('scene');
@@ -679,13 +862,6 @@
             }
         });
     });
-
-    $('.slickclase').slick({
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1
-      });
-
 </script>
 <script>
 
