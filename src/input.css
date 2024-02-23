@@ -35,13 +35,19 @@
 
     .slide-container{
       padding-bottom: 100px;
-
+     
     }   
-/* 
-    .slide-content{
-      padding: 100px;
-      margin: 0
+
+    .flechas::after{
+      color: white;
+    }
+    /* .slide-content{
+     width: 700px;
+     justify-content: center;
+     align-items: center;
+     margin: auto;
     } */
+
      /* .swiper {
       width: 100%;
       height: 100%;
