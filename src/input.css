@@ -41,6 +41,38 @@
     .flechas::after{
       color: white;
     }
+
+    @media screen and (max-width: 950px) {
+      .flechas {
+        display: none!important;
+      }
+
+      
+    }
+
+
+    .swiper-pagination{
+      display: none!important;
+    }
+
+
+    
+    /* .swiper-pagination-bullet{
+
+      color: white!important;
+      border: 1px solid #4070F4!important;
+    }
+    
+    .swiper-pagination-bullet-active{
+    
+      color: white!important;
+      border: 1px solid white!important;
+    } */
+    
+   
+
+
+
     /* .slide-content{
      width: 700px;
      justify-content: center;
